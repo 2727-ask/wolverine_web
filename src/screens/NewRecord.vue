@@ -51,11 +51,12 @@
         </div>
         <div class="uk-width-1-2@s">
           <label for="doctors">Reffered By</label>
+          <h5 :v-if="this.doc" style="color:green">{{this.doc.name}}</h5>
           <vue3-simple-typeahead
             :items="$store.state.doctors.doctors"
             placeholder="Enter Name"
             @selectItem="selectDoctor"
-            minInputLength="1"
+            minInputLength="2"
             :itemProjection="
               (item) => {
                 return item.name;
@@ -65,11 +66,12 @@
         </div>
         <div class="uk-width-1-2@s">
           <label for="facilities">Purpose</label>
+          <h5 :v-if="this.fac" style="color:green">{{this.fac.name}}</h5>
           <vue3-simple-typeahead
             :items="$store.state.facilities.facilities"
             placeholder="Enter Name"
             @selectItem="selectFacility"
-            minInputLength="1"
+            minInputLength="2"
             :itemProjection="
               (item) => {
                 return item.name;
