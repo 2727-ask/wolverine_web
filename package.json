@@ -1,0 +1,40 @@
+{
+  "name": "wolverine",
+  "version": "0.8.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --host localhost",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "firebase": "^9.6.7",
+    "fs-extra": "^10.0.1",
+    "pizzip": "^3.1.1",
+    "print-html-element": "^0.5.1",
+    "sass-loader": "^12.6.0",
+    "uikit": "^3.11.1",
+    "uuid": "^8.3.2",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vue-select": "^4.0.0-beta.3",
+    "vue-slide-unlock": "^0.3.0",
+    "vue3-simple-typeahead": "^1.0.5",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-plugin-eslint": "~4.5.13",
+    "@vue/cli-plugin-router": "~4.5.13",
+    "@vue/cli-plugin-vuex": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0"
+  }
+}
